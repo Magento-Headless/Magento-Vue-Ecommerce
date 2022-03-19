@@ -25,7 +25,6 @@ module.exports = {
     ],
     'import/prefer-default-export': 'off',
     'import/no-named-as-default': 'off',
-    'no-unused-vars': 'off',
     'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'prettier/prettier': [

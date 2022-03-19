@@ -10,9 +10,9 @@ import store from '@/store'
 import './registerServiceWorker'
 
 createApp(App)
-  .use(store)
   .use(cookie)
   .use(i18n)
   .use(lazyload)
   .use(router)
+  .use(store)
   .mount('#app')
