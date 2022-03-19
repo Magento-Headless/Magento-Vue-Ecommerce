@@ -8,6 +8,7 @@
 import { defineComponent } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useCookie } from 'vue-cookie-next'
+import { Button } from 'ant-design-vue'
 
 export default defineComponent({
   name: 'Header',
