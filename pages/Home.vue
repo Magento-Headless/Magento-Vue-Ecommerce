@@ -1,6 +1,9 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/images/logo.png" />
+    <img
+      alt="Vue logo"
+      v-lazy="{ src: require('../assets/images/logo.png') }"
+    />
   </div>
 </template>
 
