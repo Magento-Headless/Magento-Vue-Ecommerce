@@ -16,6 +16,7 @@ export default defineComponent({
     Button
   },
   setup() {
+    const a = 110
     useAppShell()
   }
 })
