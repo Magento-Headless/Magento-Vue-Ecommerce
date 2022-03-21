@@ -1,6 +1,6 @@
 <template>
   <main>
-    <Button type="primary">App</Button>
+    <Button type="primary">App K</Button>
   </main>
 </template>
 

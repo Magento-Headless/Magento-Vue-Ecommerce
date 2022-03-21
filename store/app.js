@@ -7,11 +7,14 @@ const initialState = () => ({
 const getters = {}
 
 const mutations = {
-  saveConfig(state, playload) {
-    const { currency, storeConfig } = playload
+  saveConfig(state, payload) {
+    const { currency, storeConfig } = payload
 
     state.currency = currency
     state.storeConfig = storeConfig
+  },
+  saveI18n(state, payload) {
+    state.i18n = payload
   }
 }
 
