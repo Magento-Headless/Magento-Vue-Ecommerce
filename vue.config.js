@@ -54,15 +54,18 @@ module.exports = {
       '/graphql': {
         target: `${process.env.VUE_APP_GRAPHQL_URL}/graphql`,
         changeOrigin: true,
-        secure: false
+        secure: false,
+        pathRewrite: {
+          '^/graphql': 'graphql'
+        }
       },
-      '/api/': {
+      '/api': {
         target: process.env.VUE_APP_GRAPHQL_URL,
         changeOrigin: true,
+        secure: false,
         pathRewrite: {
-          '^/api/': ''
-        },
-        secure: false
+          '^/api': 'api'
+        }
       }
     }
   },
