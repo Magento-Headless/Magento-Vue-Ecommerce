@@ -15,10 +15,12 @@ module.exports = {
   rules: {
     semi: ['error', 'never'],
     camelcase: 0,
+    'consistent-return': 'off',
     'import/extensions': [
       'error',
       'always',
       {
+        mjs: 'never',
         js: 'never',
         vue: 'never'
       }
@@ -27,6 +29,13 @@ module.exports = {
     'import/no-named-as-default': 'off',
     'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-param-reassign': [
+      'error',
+      {
+        props: true,
+        ignorePropertyModificationsFor: ['graphQLErrors', 'state']
+      }
+    ],
     'prettier/prettier': [
       'error',
       {
